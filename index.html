@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.8/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;700;900&family=Audiowide&family=Comfortaa:wght@300;400;600&family=Hind:wght@300;400;500&family=Josefin+Slab:wght@300;400;500;600&family=Lato:wght@400;700;900&family=Manrope:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;700;800;900&family=Mukta:wght@300;400;500;600;700;800&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,700&family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Open+Sans:wght@500;600;700;800&family=Poppins:wght@300;400;500&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Roboto:wght@100;300;400;500;700;900&family=Rokkitt:wght@200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/50c5b4ba34.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>e-commerce website</title>
+  </head>
+  <body class="">
+    <main class="font-poppins">
+      <!-- Navigation -->
+      <header class="">
+        <nav
+          id="navbar"
+          class="flex fixed top-0 bg-white shadow-sm items-center justify-between py-5 px-40 w-full z-50"
+        >
+          <div>
+            <h1 class="text-2xl font-comfortaa">hello</h1>
+          </div>
+          <ul class="flex justify-between text-sm uppercase">
+            <li class="mx-8"><a href="#" class="active">Home</a></li>
+            <li class="mx-8"><a href="#">men</a></li>
+            <li class="mx-8"><a href="#">women</a></li>
+            <li class="mx-8"><a href="#">kids</a></li>
+            <li class="mx-8"><a href="#">About</a></li>
+            <li class="mx-8"><a href="#">Contact</a></li>
+          </ul>
+          <ul class="flex">
+            <li class="">
+              <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </li>
+            <li class="mx-5">
+              <a href="#" class="relative ">
+                <i class="fa-solid fa-cart-shopping text-xl "></i>
+                <small
+                  class=" p-2 w-5 h-5 flex justify-center items-center text-white absolute -right-4 -top-4 bg-[#1d1c1c] text-[10px] font-thin rounded-full text-center"
+                  >4</small
+                >
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Hero section -->
+      <section class="mt-20 overflow-hidden relative w-[100%] h-[500px]">
+        <div class="lg:px-40 flex">
+          <div class="py-20 w-[50%] h-[100%]">
+            <div class="">
+              <h1 class="font-cinzel text-5xl text-right">
+                The Best of <br />
+                Winter
+                <span
+                  class="text-5xl font-thin font-playfair uppercase tracking-[.7em]"
+                >
+                  Outfits
+                </span>
+              </h1>
+            </div>
+            <p class="py-4 font-raleway text-[#000]">
+              Our collection is carefully curated with pieces that are not only
+              stylish but also made with high-quality materials and exceptional
+              craftsmanship.
+            </p>
+            <button
+              class="my-5 tracking-widest bg-black text-white px-8 py-3 font-cinzel rounded"
+            >
+              Discovery Now
+            </button>
+          </div>
+          <div class="relative w-[80%]">
+            <div class="ml-10 -z-20 relative flex items-center">
+              <span
+                class="after:content-['JEREMY'] after:absolute after:right-0 after:font-playfair after:top-20 after:text-7xl after:text-[#f3f3f3f5] tracking-[2em]"
+              ></span>
+              <span
+                class="after:content-['DESIGN'] after:absolute after:left-0 after:top-40 after:text-7xl after:font-cinzel after:font- after:text-[#f3f3f3cc]"
+              ></span>
+            </div>
+            <img
+              src="./images/lady.png"
+              alt=""
+              class="relative w-[100%] h-[100%] z-20"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- banner -->
+      <section class="py-10 lg:px-40 w-[100%]">
+        <div class="grid grid-cols-2 gap-2">
+          <div class="bg-[#dfdfdf] h-[180px] flex items-center">
+            <div class="p-6 w-[50%] h-full">
+              <img src="./images/w1.png" class="object-fill w-full h-full" />
+            </div>
+            <div class="p-2 flex flex-col justify-center items-center">
+              <p
+                class="text-center uppercase tracking-[.25em] font-cinzel font-medium text-[#555]"
+              >
+                Luxurious watch
+              </p>
+
+              <p
+                class="text-center text-xs font-cinzel lowercase font-normal text-[#555]"
+              >
+                Classic Denin jeans outfit
+              </p>
+            </div>
+          </div>
+          <div class="bg-[#dfdfdf] h-[180px] flex items-center">
+            <div class="p-6 w-[50%] h-full">
+              <img
+                src="./images/allstar.png"
+                class="object-fill w-full h-full"
+              />
+            </div>
+            <div class="p-2 flex flex-col justify-center items-center">
+              <p
+                class="text-center uppercase tracking-[.25em] font-cinzel font-medium text-[#555]"
+              >
+                All star converse
+              </p>
+
+              <p
+                class="text-center text-xs font-cinzel lowercase font-normal text-[#555]"
+              >
+                Classic Denin jeans outfit
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="w-[100%] my-4 pt-10 flex items-center justify-center">
+            <ul
+              class="w-[500px] font-montserrat items-center flex justify-between"
+            >
+              <h2
+                class="py-5 font-montserrat font-semibold text-center text-xl"
+              >
+                Featured products
+              </h2>
+              <li class="text-center font-bold text-[14px] text-[#555]">All</li>
+              <li class="text-center text-[14px] font-normal text-[#555]">
+                Men
+              </li>
+              <li class="text-center text-[14px] font-normal text-[#555]">
+                Women
+              </li>
+              <li class="text-center text-[14px] font-normal text-[#555]">
+                Kids
+              </li>
+            </ul>
+          </div>
+          <div class="grid grid-cols-4 gap-4 font-montserrat">
+            <div class="mt-4">
+              <div class="bg-[#f00] h-[250px]">
+                <img
+                  src="./images/pink watch.jpg"
+                  class="object-fill min-w-full max-h-full"
+                />
+              </div>
+              <div class="p-2 items-center justify-center">
+                <p class="text-center text-[14px] font-normal text-[#555]">
+                  Classic Denin jeans outfit
+                </p>
+                <div class="py-2 flex items-center justify-center">
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star-half text-[#000] text-xl"></i>
+                </div>
+                <p class="text-center text-[14px] font-bold text-[#555]">
+                  ETB 2000.99
+                </p>
+              </div>
+            </div>
+            <div class="mt-4">
+              <div class="bg-[#f00] h-[250px]">
+                <img
+                  src="./images/pink watch.jpg"
+                  class="object-fill min-w-full max-h-full"
+                />
+              </div>
+              <div class="p-2 items-center justify-center">
+                <p class="text-center text-[14px] font-normal text-[#555]">
+                  Classic Denin jeans outfit
+                </p>
+                <div class="py-2 flex items-center justify-center">
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star-half text-[#000] text-xl"></i>
+                </div>
+                <p class="text-center text-[14px] font-bold text-[#555]">
+                  ETB 2000.99
+                </p>
+              </div>
+            </div>
+            <div class="mt-4">
+              <div class="h-[250px]">
+                <img
+                  src="./images/pink watch.jpg"
+                  class="object-fill min-w-full max-h-full"
+                />
+              </div>
+              <div class="p-2 items-center justify-center">
+                <p class="text-center text-[14px] font-normal text-[#555]">
+                  Classic Denin jeans outfit
+                </p>
+                <div class="py-2 flex items-center justify-center">
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star-half text-[#000] text-xl"></i>
+                </div>
+                <p class="text-center text-[14px] font-bold text-[#555]">
+                  ETB 2000.99
+                </p>
+              </div>
+            </div>
+            <div class="mt-4">
+              <div class="bg-[#e7e7e7] p-5 h-[250px]">
+                <img
+                  src="./images/allstar.png"
+                  class="object-fill min-w-full max-h-full"
+                />
+              </div>
+              <div class="p-2 items-center justify-center">
+                <p class="text-center text-[14px] font-normal text-[#555]">
+                  Classic Denin jeans outfit
+                </p>
+                <div class="py-2 flex items-center justify-center">
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star-half text-[#000] text-xl"></i>
+                </div>
+                <p class="text-center text-[14px] font-bold text-[#555]">
+                  ETB 2000.99
+                </p>
+              </div>
+            </div>
+            <div class="mt-4">
+              <div class="bg-[#f00] h-[250px]">
+                <img
+                  src="./images/pink watch.jpg"
+                  class="object-fill min-w-full max-h-full"
+                />
+              </div>
+              <div class="p-2 items-center justify-center">
+                <p class="text-center text-[14px] font-normal text-[#555]">
+                  Classic Denin jeans outfit
+                </p>
+                <div class="py-2 flex items-center justify-center">
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star-half text-[#000] text-xl"></i>
+                </div>
+                <p class="text-center text-[14px] font-bold text-[#555]">
+                  ETB 2000.99
+                </p>
+              </div>
+            </div>
+            <div class="mt-4">
+              <div class="bg-[#f00] h-[250px]">
+                <img
+                  src="./images/pink watch.jpg"
+                  class="object-fill min-w-full max-h-full"
+                />
+              </div>
+              <div class="p-2 items-center justify-center">
+                <p class="text-center text-[14px] font-normal text-[#555]">
+                  Classic Denin jeans outfit
+                </p>
+                <div class="py-2 flex items-center justify-center">
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star-half text-[#000] text-xl"></i>
+                </div>
+                <p class="text-center text-[14px] font-bold text-[#555]">
+                  ETB 2000.99
+                </p>
+              </div>
+            </div>
+            <div class="mt-4">
+              <div class="bg-[#f00] h-[250px]">
+                <img
+                  src="./images/pink watch.jpg"
+                  class="object-fill min-w-full max-h-full"
+                />
+              </div>
+              <div class="p-2 items-center justify-center">
+                <p class="text-center text-[14px] font-normal text-[#555]">
+                  Classic Denin jeans outfit
+                </p>
+                <div class="py-2 flex items-center justify-center">
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star text-[#000] text-xl"></i>
+                  <i class="bx bxs-star-half text-[#000] text-xl"></i>
+                </div>
+                <p class="text-center text-[14px] font-bold text-[#555]">
+                  ETB 2000.99
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="text-white mt-10 font-montserrat">
+            <button
+              class="mr-4 rounded-sm text-center text-sm bg-black w-8 h-7"
+            >
+              1
+            </button>
+            <button
+              class="mx-2 rounded-sm text-center text-sm bg-black w-8 h-7"
+            >
+              2
+            </button>
+            <button
+              class="mx-2 rounded-sm text-center text-sm bg-black w-8 h-7"
+            >
+              3
+            </button>
+            <button
+              class="mx-2 rounded-sm text-center text-sm bg-black w-8 h-7"
+            >
+              4
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-20 bg-slate-100">
+        <div class="relative py-20 lg:px-40 flex justify-between">
+          <div class="w-[500px]">
+            <h1 class="tracking-[.25em] text-center font-cinzel pb-10">
+              About
+            </h1>
+            <div>
+              <h1 class="text-4xl text font-thin font-playfair uppercase">
+                Not just a clothing brand - Outfits
+              </h1>
+            </div>
+            <p class="mt-10 text-sm font-raleway text-[#555] tracking-wide">
+              We are passionate about fashion and providing our customers with
+              the latest trends and styles. Our mission is to help you look and
+              feel your best with our wide selection of clothing and accessories
+            </p>
+            <button
+              class="mt-10 tracking-widest bg-black text-white px-8 py-3 font-cinzel rounded"
+            >
+              More About Us
+            </button>
+          </div>
+          <div class="relative w-[600px] h-[400px] ml-10">
+            <img
+              src="./images/collection2.jpg"
+              class="bg-slate-200 absolute -right-24 -top-20 h-[300px] w-[300px]"
+            />
+            <img src="./images/collection1.jpg" class="h-[400px] w-full" />
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <section class="lg:px-40 py-5 bg-black">
+        <footer class="py-10 grid grid-cols-4 gap-10">
+          <div class="text-white">
+            <h1 class="font-medium">Corprate info</h1>
+            <ul class="py-4 ml-4">
+              <li class=" ">
+                <a class="text-[14px] font-normal text-[#555]">Abous us</a>
+              </li>
+              <li class=" ">
+                <a class="text-[14px] font-normal text-[#555]">Careers</a>
+              </li>
+              <li class=" ">
+                <a class="text-[14px] font-normal text-[#555]">Partnerships</a>
+              </li>
+              <li class=" ">
+                <a class="text-[14px] font-normal text-[#555]"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li class=" ">
+                <a class="text-[14px] font-normal text-[#555]">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-white">
+            <h1 class="font-medium">Customer Services</h1>
+            <ul class="py-4 ml-4">
+              <li class="">
+                <a class="text-[14px] font-normal text-[#555]">FAQ</a>
+              </li>
+              <li class=" ">
+                <a class="text-[14px] font-normal text-[#555]">Contact us</a>
+              </li>
+              <li class=" ">
+                <a class="text-[14px] font-normal text-[#555]">Sizing charts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-white">
+            <h1 class="font-medium">Follow us on</h1>
+            <ul class="py-4 flex ml-4">
+              <a
+                class="w-7 h-7 cursor-pointer text-center mx-2 flex justify-center items-center bg-[#555] rounded-full"
+              >
+                <i class="bx bxl-instagram"></i>
+              </a>
+              <a
+                class="w-7 h-7 cursor-pointer text-center mx-2 flex justify-center items-center bg-[#555] rounded-full"
+              >
+                <i class="bx bxl-telegram"></i>
+              </a>
+              <a
+                class="w-7 h-7 cursor-pointer text-center mx-2 flex justify-center items-center bg-[#555] rounded-full"
+              >
+                <i class="bx bxl-twitter"></i>
+              </a>
+              <a
+                class="w-7 h-7 cursor-pointer text-center mx-2 flex justify-center items-center bg-[#555] rounded-full"
+              >
+                <i class="bx bxl-youtube"></i>
+              </a>
+            </ul>
+          </div>
+          <div class="text-white">
+            <h1 class="font-medium">Subscribe newslatter</h1>
+            <div class="py-4 ml-4">
+              <p class="text-[14px] font-normal text-[#555]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi,
+                laborum
+              </p>
+              <form
+                class="my-4 flex items-center w-[240px] text-[14px] border border-[#555] bg-black font-normal text-[#555] rounded-sm"
+              >
+                <input
+                  type="email"
+                  placeholder="Email address"
+                  class="px-6 font-thin w-full text-xs tracking-[.25em] text-[#555] outline-none bg-transparent"
+                />
+                <button
+                  class="bg-white px-2 py-1 text-black border-2 border-white flex justify-center items-center"
+                >
+                  <i class="bx bxl-telegram text-xl"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </footer>
+        <hr />
+      </section>
+    </main>
+  </body>
+</html>

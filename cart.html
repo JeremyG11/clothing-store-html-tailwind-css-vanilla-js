@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.8/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;700;900&family=Audiowide&family=Comfortaa:wght@300;400;600&family=Hind:wght@300;400;500&family=Josefin+Slab:wght@300;400;500;600&family=Lato:wght@400;700;900&family=Manrope:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;700;800;900&family=Mukta:wght@300;400;500;600;700;800&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,700&family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Open+Sans:wght@500;600;700;800&family=Poppins:wght@300;400;500&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Roboto:wght@100;300;400;500;700;900&family=Rokkitt:wght@200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/50c5b4ba34.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>e-commerce website</title>
+  </head>
+  <body class="">
+    <main class="font-poppins">
+      <header>
+        <nav class="flex items-center justify-between py-5 px-40">
+          <div>
+            <h1 class="text-2xl font-comfortaa">hello</h1>
+          </div>
+          <ul class="flex justify-between text-sm uppercase">
+            <li class="mx-8"><a href="#" class="active">Home</a></li>
+            <li class="mx-8"><a href="#">men</a></li>
+            <li class="mx-8"><a href="#">women</a></li>
+            <li class="mx-8"><a href="#">kids</a></li>
+            <li class="mx-8"><a href="#">About</a></li>
+            <li class="mx-8"><a href="#">Contact</a></li>
+          </ul>
+          <ul class="flex">
+            <li class="">
+              <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </li>
+            <li class="mx-5">
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="bg-[#f8f8f8ee] lg:px-40 font-montserrat">
+        <div class="flex justify-between py-[80px] mx-auto">
+          <table class="p-10 border-collapse w-[100%]">
+            <tr class="font-montserrat">
+              <th
+                class="text-left px-5 py-1 text-white font-medium font-montserrat tracking-widest bg-black"
+              >
+                Items
+              </th>
+              <th
+                class="text-left px-5 py-1 text-white font-medium font-montserrat bg-black"
+              >
+                Quantity
+              </th>
+              <th
+                class="text-left px-5 py-1 text-white font-medium font-montserrat bg-black"
+              >
+                Sub Price
+              </th>
+            </tr>
+            <tr>
+              <td class="py-5">
+                <div class="flex flex-wrap">
+                  <img
+                    src="./images/allstar.png"
+                    alt=""
+                    class="mr-5 w-[100px] h-[100px] bg-[#ececec]"
+                  />
+                  <div>
+                    <p class="mb-2">All star converse</p>
+                    <small class="">ETB 2500.00</small>
+                    <br />
+                    <button
+                      class="mt-4 cursor-pointer w-7 h-7 flex items-center justify-center rounded-full border text-black text-xs"
+                    >
+                      <i class="bx bx-x text-xl"></i>
+                    </button>
+                  </div>
+                </div>
+              </td>
+              <td class="py-5 px-2">
+                <div class="">
+                  <div class="w-[140px] flex items-center justify-between">
+                    <p
+                      class="w-11 h-8 rounded p-2 flex items-center justify-center bg-black text-white"
+                    >
+                      1
+                    </p>
+                    <span
+                      class="cursor-pointer w-8 h-8 flex items-center justify-center rounded-full border"
+                      ><i class="bx bx-plus"></i
+                    ></span>
+                    <span
+                      class="cursor-pointer w-8 h-8 flex items-center justify-center rounded-full border"
+                      ><i class="bx bx-minus"></i
+                    ></span>
+                  </div>
+                </div>
+              </td>
+              <td class="py-5 px-6 text-lg font-medium">ETB 400.00</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <!-- footer -->
+      <section class="lg:px-40 py-5 bg-black">
+        <footer class="py-10 grid grid-cols-4 gap-10">
+          <div class="text-white">
+            <h1 class="font-medium">Corprate info</h1>
+            <ul class="py-4 ml-4">
+              <li class=" ">
+                <a class="text-[14px] font-normal text-[#555]">About us</a>
+              </li>
+              <li class=" ">
+                <a class="text-[14px] font-normal text-[#555]">Careers</a>
+              </li>
+              <li class=" ">
+                <a class="text-[14px] font-normal text-[#555]">Partnerships</a>
+              </li>
+              <li class=" ">
+                <a class="text-[14px] font-normal text-[#555]"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li class=" ">
+                <a class="text-[14px] font-normal text-[#555]">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-white">
+            <h1 class="font-medium">Customer Services</h1>
+            <ul class="py-4 ml-4">
+              <li class="">
+                <a class="text-[14px] font-normal text-[#555]">FAQ</a>
+              </li>
+              <li class=" ">
+                <a class="text-[14px] font-normal text-[#555]">Contact us</a>
+              </li>
+              <li class=" ">
+                <a class="text-[14px] font-normal text-[#555]">Sizing charts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-white">
+            <h1 class="font-medium">Follow us on</h1>
+            <ul class="py-4 flex ml-4">
+              <a
+                class="w-7 h-7 cursor-pointer text-center mx-2 flex justify-center items-center bg-[#555] rounded-full"
+              >
+                <i class="bx bxl-instagram"></i>
+              </a>
+              <a
+                class="w-7 h-7 cursor-pointer text-center mx-2 flex justify-center items-center bg-[#555] rounded-full"
+              >
+                <i class="bx bxl-telegram"></i>
+              </a>
+              <a
+                class="w-7 h-7 cursor-pointer text-center mx-2 flex justify-center items-center bg-[#555] rounded-full"
+              >
+                <i class="bx bxl-twitter"></i>
+              </a>
+              <a
+                class="w-7 h-7 cursor-pointer text-center mx-2 flex justify-center items-center bg-[#555] rounded-full"
+              >
+                <i class="bx bxl-youtube"></i>
+              </a>
+            </ul>
+          </div>
+          <div class="text-white">
+            <h1 class="font-medium">Subscribe newslatter</h1>
+            <div class="py-4 ml-4">
+              <p class="text-[14px] font-normal text-[#555]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi,
+                laborum
+              </p>
+              <form
+                class="my-4 flex items-center w-[240px] text-[14px] border border-[#555] bg-black font-normal text-[#555] rounded-sm"
+              >
+                <input
+                  type="email"
+                  placeholder="Email address"
+                  class="px-6 font-thin w-full text-xs tracking-[.25em] text-[#555] outline-none bg-transparent"
+                />
+                <button
+                  class="bg-white px-2 py-1 text-black border-2 border-white flex justify-center items-center"
+                >
+                  <i class="bx bxl-telegram text-xl"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </footer>
+        <hr />
+      </section>
+    </main>
+  </body>
+</html>
