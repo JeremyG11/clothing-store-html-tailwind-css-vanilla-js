@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.8/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,7 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="script.js"></script>
+    <script src="index.js"></script>
     <script
       src="https://kit.fontawesome.com/50c5b4ba34.js"
       crossorigin="anonymous"
@@ -26,6 +23,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.1/redux.min.js"></script>
     <title>e-commerce website</title>
   </head>
   <body class="">
@@ -36,16 +34,16 @@
           id="navbar"
           class="flex fixed top-0 bg-white shadow-sm items-center justify-between py-5 px-40 w-full z-50"
         >
-          <div>
-            <h1 class="text-2xl font-comfortaa">hello</h1>
+          <div class="h-8 object-contain">
+            <img src="./images/logo.svg" class="text-2xl h-full font-comfortaa"/>
           </div>
           <ul class="flex justify-between text-sm uppercase">
-            <li class="mx-8"><a href="#" class="active">Home</a></li>
+            <li class="mx-8"><a href="index.html" class="active">Home</a></li>
+            <li class="mx-8"><a href="#">shop</a></li>
             <li class="mx-8"><a href="#">men</a></li>
             <li class="mx-8"><a href="#">women</a></li>
             <li class="mx-8"><a href="#">kids</a></li>
-            <li class="mx-8"><a href="#">About</a></li>
-            <li class="mx-8"><a href="#">Contact</a></li>
+            <li class="mx-8"><a href="#about">About</a></li>
           </ul>
           <ul class="flex">
             <li class="">
@@ -54,11 +52,12 @@
               </button>
             </li>
             <li class="mx-5">
-              <a href="#" class="relative ">
-                <i class="fa-solid fa-cart-shopping text-xl "></i>
+              <a href="cart.html" class="relative">
+                <i class="fa-solid fa-cart-shopping text-xl"></i>
                 <small
-                  class=" p-2 w-5 h-5 flex justify-center items-center text-white absolute -right-4 -top-4 bg-[#1d1c1c] text-[10px] font-thin rounded-full text-center"
-                  >4</small
+                  id="cart-items"
+                  class="p-2 w-5 h-5 flex justify-center items-center text-white absolute -right-4 -top-4 bg-[#1d1c1c] text-[10px] font-thin rounded-full text-center"
+                  >0</small
                 >
               </a>
             </li>
@@ -152,6 +151,7 @@
             </div>
           </div>
         </div>
+
         <div>
           <div class="w-[100%] my-4 pt-10 flex items-center justify-center">
             <ul
@@ -174,169 +174,11 @@
               </li>
             </ul>
           </div>
-          <div class="grid grid-cols-4 gap-4 font-montserrat">
-            <div class="mt-4">
-              <div class="bg-[#f00] h-[250px]">
-                <img
-                  src="./images/pink watch.jpg"
-                  class="object-fill min-w-full max-h-full"
-                />
-              </div>
-              <div class="p-2 items-center justify-center">
-                <p class="text-center text-[14px] font-normal text-[#555]">
-                  Classic Denin jeans outfit
-                </p>
-                <div class="py-2 flex items-center justify-center">
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star-half text-[#000] text-xl"></i>
-                </div>
-                <p class="text-center text-[14px] font-bold text-[#555]">
-                  ETB 2000.99
-                </p>
-              </div>
-            </div>
-            <div class="mt-4">
-              <div class="bg-[#f00] h-[250px]">
-                <img
-                  src="./images/pink watch.jpg"
-                  class="object-fill min-w-full max-h-full"
-                />
-              </div>
-              <div class="p-2 items-center justify-center">
-                <p class="text-center text-[14px] font-normal text-[#555]">
-                  Classic Denin jeans outfit
-                </p>
-                <div class="py-2 flex items-center justify-center">
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star-half text-[#000] text-xl"></i>
-                </div>
-                <p class="text-center text-[14px] font-bold text-[#555]">
-                  ETB 2000.99
-                </p>
-              </div>
-            </div>
-            <div class="mt-4">
-              <div class="h-[250px]">
-                <img
-                  src="./images/pink watch.jpg"
-                  class="object-fill min-w-full max-h-full"
-                />
-              </div>
-              <div class="p-2 items-center justify-center">
-                <p class="text-center text-[14px] font-normal text-[#555]">
-                  Classic Denin jeans outfit
-                </p>
-                <div class="py-2 flex items-center justify-center">
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star-half text-[#000] text-xl"></i>
-                </div>
-                <p class="text-center text-[14px] font-bold text-[#555]">
-                  ETB 2000.99
-                </p>
-              </div>
-            </div>
-            <div class="mt-4">
-              <div class="bg-[#e7e7e7] p-5 h-[250px]">
-                <img
-                  src="./images/allstar.png"
-                  class="object-fill min-w-full max-h-full"
-                />
-              </div>
-              <div class="p-2 items-center justify-center">
-                <p class="text-center text-[14px] font-normal text-[#555]">
-                  Classic Denin jeans outfit
-                </p>
-                <div class="py-2 flex items-center justify-center">
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star-half text-[#000] text-xl"></i>
-                </div>
-                <p class="text-center text-[14px] font-bold text-[#555]">
-                  ETB 2000.99
-                </p>
-              </div>
-            </div>
-            <div class="mt-4">
-              <div class="bg-[#f00] h-[250px]">
-                <img
-                  src="./images/pink watch.jpg"
-                  class="object-fill min-w-full max-h-full"
-                />
-              </div>
-              <div class="p-2 items-center justify-center">
-                <p class="text-center text-[14px] font-normal text-[#555]">
-                  Classic Denin jeans outfit
-                </p>
-                <div class="py-2 flex items-center justify-center">
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star-half text-[#000] text-xl"></i>
-                </div>
-                <p class="text-center text-[14px] font-bold text-[#555]">
-                  ETB 2000.99
-                </p>
-              </div>
-            </div>
-            <div class="mt-4">
-              <div class="bg-[#f00] h-[250px]">
-                <img
-                  src="./images/pink watch.jpg"
-                  class="object-fill min-w-full max-h-full"
-                />
-              </div>
-              <div class="p-2 items-center justify-center">
-                <p class="text-center text-[14px] font-normal text-[#555]">
-                  Classic Denin jeans outfit
-                </p>
-                <div class="py-2 flex items-center justify-center">
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star-half text-[#000] text-xl"></i>
-                </div>
-                <p class="text-center text-[14px] font-bold text-[#555]">
-                  ETB 2000.99
-                </p>
-              </div>
-            </div>
-            <div class="mt-4">
-              <div class="bg-[#f00] h-[250px]">
-                <img
-                  src="./images/pink watch.jpg"
-                  class="object-fill min-w-full max-h-full"
-                />
-              </div>
-              <div class="p-2 items-center justify-center">
-                <p class="text-center text-[14px] font-normal text-[#555]">
-                  Classic Denin jeans outfit
-                </p>
-                <div class="py-2 flex items-center justify-center">
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star text-[#000] text-xl"></i>
-                  <i class="bx bxs-star-half text-[#000] text-xl"></i>
-                </div>
-                <p class="text-center text-[14px] font-bold text-[#555]">
-                  ETB 2000.99
-                </p>
-              </div>
-            </div>
-          </div>
+          <!-- All products -->
+          <div
+            id="item-card"
+            class="grid grid-cols-4 gap-4 font-montserrat"
+          ></div>
           <div class="text-white mt-10 font-montserrat">
             <button
               class="mr-4 rounded-sm text-center text-sm bg-black w-8 h-7"
@@ -362,7 +204,89 @@
         </div>
       </section>
 
-      <section class="my-20 bg-slate-100">
+      <section class="bg-gray-300 min-h-[100vh]:">
+        <div
+          class="relative py-10 h-[100%] lg:px-40 grid grid-cols-fluid grid-flow-dense auto-rows-fluid gap-5"
+        >
+          <div class="relative flex items-center justify-center w-full">
+            <img
+              src="./images/27.png "
+              class="bg-slate-50 h-full w-full py-5 object-contain"
+            />
+            <div class="absolute w-full h-full flex items-start justify-end">
+              <span>
+                <p class="text-xl font-pinyon px-5 py-1">
+                  Gentlement <br /><span class="font-cinzel ml-8">Outfit</span>
+                </p>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="relative flex items-center justify-center w-full col-span-2 row-span-2"
+          >
+            <img
+              src="./images/girl2.png"
+              class="bg-slate-200 h-full w-full p-20 object-cover"
+            />
+            <div
+              class="absolute w-full h-full flex items-center justify-center"
+            >
+              <span>
+                <p
+                  class="text-8xl border border-white px-2 font-playfair text-[#ffffff] uppercase tracking-widest"
+                >
+                  sale
+                </p>
+                <p class="my-2 font-pinyon text-center text-4xl font-medium">
+                  Discount <spna class="font-cinzel">30% </spna> off
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="relative flex items-center justify-center w-full">
+            <img
+              src="./images/3.jpg"
+              class="bg-slate-200 h-full w-full object-cover"
+            />
+            <div class="absolute w-full h-full flex items-end justify-start">
+              <span>
+                <p class="text-xl font-pinyon px-5 py-1">
+                  Quality <br /><span class="font-cinzel ml-8">Backpack</span>
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="relative flex items-center justify-center w-full">
+            <img
+              src="./images/24.jpg"
+              class="bg-slate-200 h-full w-full object-cover"
+            />
+            <div class="absolute w-full h-full flex items-center justify-end">
+              <span>
+                <p class="text-xl font-pinyon p-2">
+                  Best <br /><span class="font-cinzel ml-8">T-shirt</span>
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="relative flex items-center justify-center w-full">
+            <img
+              src="./images/hat1.png"
+              class="bg-slate-50 h-full w-full object-contain"
+            />
+            <div class="absolute w-full h-full flex items-end justify-end">
+              <span>
+                <p class="text-xl font-pinyon p-2">
+                  Stylish <br /><span class="font-cinzel ml-8">Hats</span>
+                </p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="my-20 bg-slate-100">
         <div class="relative py-20 lg:px-40 flex justify-between">
           <div class="w-[500px]">
             <h1 class="tracking-[.25em] text-center font-cinzel pb-10">

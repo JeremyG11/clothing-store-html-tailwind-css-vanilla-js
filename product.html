@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.8/css/boxicons.min.css"
-      rel="stylesheet"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,7 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="script.js"></script>
+    <script src="./product.js"></script>
     <script
       src="https://kit.fontawesome.com/50c5b4ba34.js"
       crossorigin="anonymous"
@@ -26,17 +22,21 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.1/redux.min.js"></script>
     <title>e-commerce website</title>
   </head>
   <body class="">
     <main class="font-poppins">
       <header>
-        <nav class="flex items-center justify-between py-5 px-40">
+        <nav
+          id="navbar"
+          class="flex fixed top-0 bg-white shadow-sm items-center justify-between py-5 px-40 w-full z-50"
+        >
           <div>
             <h1 class="text-2xl font-comfortaa">hello</h1>
           </div>
           <ul class="flex justify-between text-sm uppercase">
-            <li class="mx-8"><a href="#" class="active">Home</a></li>
+            <li class="mx-8"><a href="index.html" class="active">Home</a></li>
             <li class="mx-8"><a href="#">men</a></li>
             <li class="mx-8"><a href="#">women</a></li>
             <li class="mx-8"><a href="#">kids</a></li>
@@ -50,53 +50,70 @@
               </button>
             </li>
             <li class="mx-5">
-              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="cart.html" class="relative">
+                <i class="fa-solid fa-cart-shopping text-xl"></i>
+                <small
+                  id="cart-items"
+                  class="p-2 w-5 h-5 flex justify-center items-center text-white absolute -right-4 -top-4 bg-[#1d1c1c] text-[10px] font-thin rounded-full text-center"
+                  >0</small
+                >
+              </a>
             </li>
           </ul>
         </nav>
       </header>
-      <section class="bg-[#f1ecec] lg:px-40 p-16 relative w-[100%] h-[500px]">
+      <section
+        class="bg-[#f1ecec] lg:px-40 p-20 mt-16 relative w-[100%] h-[500px]"
+      >
         <div class="h-[400px] flex justify-between">
           <div class="w-[300px] h-[200px]">
             <div class="bg-white p-6 h-64">
-              <img src="./images/w1.png" class="object-fill w-full h-full" />
+              <img id="img1" src="" class="object-fill w-full h-full" />
             </div>
             <div class="py-2 grid grid-cols-3 gap-2 w-full">
               <img
-                src="./images/w1.png"
+                id="img2"
+                src=""
                 class="p-5 bg-white object-fill w-full h-full"
               />
               <img
-                src="./images/w1.png"
+                id="img3"
+                src=""
                 class="p-5 bg-white object-fill w-full h-full"
               />
               <img
-                src="./images/w1.png"
+                id="img4"
+                src=""
                 class="p-5 bg-white object-fill w-full h-full"
               />
             </div>
           </div>
-          <div class="w-[65%] flex flex-col py-5 px-20">
+          <div id="texts" class="w-[65%] flex flex-col py-5 px-20">
             <p
+              id="item-title"
               class="text-xl uppercase tracking-[.25em] font-cinzel font-medium text-[#555]"
             >
               Luxurious Smart Watch
             </p>
 
             <small
+              id="item-available"
               class="font-comfortaa py-4 font-semibold tracking-widest text-xs text-[#555]"
-              ><i class="bx bx-check-double text-base text-green-500"></i>available</small
+              ><i class="bx bx-check-double text-base text-green-500"></i
+              >available</small
             >
             <div class="font-raleway flex">
               <p class="font-semibold text-[#555]">Description:</p>
-              <p class="ml-20 text-[#555]">
+              <p id="item-description" class="ml-20 text-[#555]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Possimus, quo?
               </p>
             </div>
             <div class="py-4 font-raleway flex items-center">
               <p class="font-semibold text-[#555]">Price:</p>
-              <p class="ml-20 font-bold text-[#555]">ETB 2500.59</p>
+              <p id="item-price" class="ml-20 font-bold text-[#555]">
+                ETB 2500.59
+              </p>
             </div>
             <div class="py-4 flex items-center">
               <p class="font-raleway font-semibold text-[#555]">Rate:</p>
@@ -109,6 +126,7 @@
               </div>
             </div>
             <button
+              id="add-to-cart"
               class="my-5 py-2 px-4 rounded bg-black text-white outline-none w-[180px]"
             >
               Add to Cart
